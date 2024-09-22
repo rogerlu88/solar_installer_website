@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar Installer Checklist</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Green Energy Solar Installation Checklist</h1>
+        <p>Track your solar installations with ease.</p>
+    </header>
+    
+    <main>
+        <form id="installationForm" enctype="multipart/form-data">
+            <div class="form-section">
+                <label for="installation_date">Installation Date:</label>
+                <input type="date" id="installation_date" name="installation_date" required>
+            </div>
+
+            <div class="form-section">
+                <label for="client_name">Client Name:</label>
+                <input type="text" id="client_name" name="client_name" required>
+            </div>
+
+            <div class="form-section">
+                <label for="client_phone">Client Phone:</label>
+                <input type="text" id="client_phone" name="client_phone" required>
+            </div>
+
+            <div class="form-section">
+                <label for="project_address">Project Address:</label>
+                <input type="text" id="project_address" name="project_address" required>
+            </div>
+
+            <div class="form-section">
+                <label for="panel_size">Panel Size (kW):</label>
+                <input type="number" id="panel_size" name="panel_size" step="0.1" required>
+            </div>
+
+            <div class="form-section">
+                <label for="installer_names">Installer Names:</label>
+                <input type="text" id="installer_names" name="installer_names" required>
+            </div>
+
+            <div class="form-section">
+                <label for="electrician_name">Electrician Name:</label>
+                <input type="text" id="electrician_name" name="electrician_name" required>
+            </div>
+
+            <div class="checklist">
+                <h3>Checklist</h3>
+                <div class="checklist-item">
+                    <label for="roof_connection">Roof Connection:</label>
+                    <input type="text" id="roof_connection" name="roof_connection">
+                    <input type="file" name="roof_connection_img">
+                </div>
+
+                <div class="checklist-item">
+                    <label for="junction_box">Junction Box:</label>
+                    <input type="text" id="junction_box" name="junction_box">
+                    <input type="file" name="junction_box_img">
+                </div>
+
+                <!-- Add more checklist items as required -->
+            </div>
+
+            <button type="submit">Save</button>
+        </form>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

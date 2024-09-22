@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #4CAF50;
+    color: white;
+}
+
+main {
+    margin: 20px;
+}
+
+.form-section {
+    margin-bottom: 10px;
+}
+
+.checklist {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.checklist-item {
+    width: 30%;
+    margin-right: 1%;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #45a049;
+}
